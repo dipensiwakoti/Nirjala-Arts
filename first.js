@@ -36,7 +36,7 @@ downFotter.addEventListener("mouseenter",function(){
 
 var loader= document.querySelector("#loader");
  setTimeout(function(){
-  loader.style.top= "-100%";
+  loader.style.top= "-150%";
  },4000)
 cont.addEventListener("mouseenter",function(){
    full.style.display= "block"
