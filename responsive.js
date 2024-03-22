@@ -127,25 +127,25 @@ page4Element.forEach(function(elementEachPage4,nodeEach) {
       })
     });
 
-    sendButton77.addEventListener("click",function textAreaInvalid(){
-      var e = document.querySelector(".addASuggestion textarea").value.trim().length;
-      if(e == 0){
-        textArea.placeholder = "Please fill the form !";
-    }
-    if(e>0){
-      textArea.value = "";
-      textArea.placeholder = "Form sucessfully Submitted!";
-      textArea.style.color = "orangered";
+    // sendButton77.addEventListener("click",function textAreaInvalid(){
+    //   var e = document.querySelector(".addASuggestion textarea").value.trim().length;
+    //   if(e == 0){
+    //     textArea.placeholder = "Please fill the form !";
+    // }
+    // if(e>0){
+    //   textArea.value = "";
+    //   textArea.placeholder = "Form sucessfully Submitted!";
+    //   textArea.style.color = "orangered";
     
-     setTimeout(function(){
+    //  setTimeout(function(){
     
-       textArea.style.color = "black";
-       textArea.placeholder = "add some sugg....";
+    //    textArea.style.color = "black";
+    //    textArea.placeholder = "add some sugg....";
     
     
-     },2000)
-    }
-    });
+    //  },2000)
+    // }
+    // });
   // var elementEachPage4.id);
   // elementEachPage4.forEach(function(elementEachPage4_2nd,nodeEach_2nd){
        
