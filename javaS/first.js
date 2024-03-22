@@ -12,10 +12,6 @@ var backTop = document.querySelector("#backToTop");
 i=1;
 j=1;
 
-// hibro.addEventListener("mouseenter",function(){
-//   console.log("entered sucesfully", i );
-//   i++;
-// })
 hibro.addEventListener("mouseenter",function(){
    delete (document.querySelector(".sendSvg-mid-footer"));
    console.log("entered sucesfully", i );
