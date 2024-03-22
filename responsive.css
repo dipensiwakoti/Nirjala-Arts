@@ -359,7 +359,7 @@
  .sendSvg-mid-footer1{
   height: 10vh;
   width: 4.4vw;
-  right: 8%;
+  /* right: 8%; */
   top: 14%;
 }
 .textAreaSugg{
@@ -523,6 +523,22 @@ line-height: 16.9px;
   .navigation .nav-menu-svg1 {
     width: 13vw;
   }
+}
 
 }
+@media (min-width:350px) {
+@media (max-width:950px) {
+
+  .sendSvg-mid-footer1 {
+    height: 10vh;
+    width: 4.4vw;
+    right: 8%;
+    top: 14%;
+  }
+}
+}
+@media (max-width:350px) {
+  .sendSvg-mid-footer1{
+    right: 1.6%;
+  }
 }
