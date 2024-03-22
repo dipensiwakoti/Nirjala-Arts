@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 100vh;
+    width: 100vw;
+}
+.box1{
+    height:60vh;
+    width: 100vw;
+    background-color:orangered;
+    position: relative;
+    top: 30vh;
+    border-radius: 10%;
+    filter: blur(20px);
+    animation: test 4.3s ease-in infinite alternate-reverse;
+
+}
+.box2{
+    height: 30vh;
+    width: 80vh;
+    /* background-color:rgb(46, 211, 17); */
+    /* background-color: orangered; */
+    background-color: black;
+    position: absolute;
+    border-radius: 26%;
+    right: 1%;
+    filter: blur(20px);
+    /* animation: box2 6s ease-in 1s infinite; */
+    top:-80%;
+    transform: rotateZ('-80');
+    transform: rotatex('-80deg');
+}
+.box3{
+    height: 20vh;
+    width:20vw;
+    background-color:rgb(243, 223, 6);
+    position: absolute;
+    border-radius: 7%;
+    filter: blur(20px);
+    animation: test 3s ease-in infinite alternate-reverse;
+}
+@keyframes test{
+
+    0%{
+        transform:translate(10%,-3%) rotate(4deg) skew(-30deg);
+    }
+    100%{
+        transform:translate(-5%,-2%) rotate(-5deg) skew(20deg);
+    }
+    
+}
+
+@keyframes box2 {
+    
+    0%{
+        rotate: 0deg;
+        transform: translate() skew(13deg);
+    }
+    40%{
+        rotate: 11deg;
+        transform: translate(-20%,1%);
+        transform: translate() skew(-10deg);
+
+
+    }
+    60%{
+        rotate: -20deg;
+    }
+    70%{
+        transform: translate(-40%,3%) skew(-16%);
+
+    }
+    90%{
+        rotate: 4deg;
+        transform: translate(2%,1%) skew(-7%);
+
+    }
+    100%{
+        rotate: 0deg;
+        transform: translate(0%,0%) skew(7%);
+
+    }
+    
+}

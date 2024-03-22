@@ -1,0 +1,318 @@
+@font-face {
+  font-family: webpage;
+  src: url(../font/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+  font-family: LIGHTT;
+  src: url(../font/NeueHaasDisplayLight.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.page4 {
+  min-height: 28.2vw;
+  background-color: rgba(87, 87, 87, 0.784);
+  width: 100vw;
+  position: relative;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 9;
+}
+.page4Resposive{
+  display: none;
+}
+
+.page4 .elem {
+  height: 15vh;
+  width: 100vw;
+  left: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.345);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.elem h2 {
+  font-family: webpage;
+  font-size: 2.4vw;
+  padding: 1.2vh 3vw;
+  z-index: 99;
+}
+
+.page4 .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  background-color: #ff9831;
+  transition: all 0.2s;
+}
+.page4 .elem img {
+  display: none;
+}
+.page4 .elem video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+.page4 .elem:hover .overlay {
+  top: 0;
+}
+.page4 .elem:hover {
+  color: brown;
+  text-shadow: 19px 2px 12px yellowgreen;
+}
+
+.fullScreen {
+  position: fixed;
+  height: 32vw;
+  width: 25vw;
+  background-color: black;
+  border-radius: 7%;
+  z-index: 99;
+  left: 39%;
+  top: 10%;
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+
+.page5 {
+  height: 70vh;
+  width: 100%;
+  background-color: antiquewhite;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.leftVideo {
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+}
+.videoSong {
+  position: relative;
+  display: flex;
+  height: 50%;
+  width: 12vw;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.leftVideo video {
+  height: 40vh;
+}
+
+.textMid {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background-color: rgba(123, 154, 123, 0.596);
+  margin-left: 5vw;
+  margin-right: -20vw;
+}
+.textMid1 {
+  color: rgba(0, 0, 0, 0.685);
+  margin: 20px;
+  font-size: 1.7vw;
+  font-weight: 600;
+  font-family: LIGHTT;
+  font-style: italic;
+}
+
+.rightVideo {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+.videoRachana {
+  display: flex;
+  width: 19%;
+  margin-right: 5px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.rachanaArt {
+  width: 100vw;
+  height: 45vh;
+  margin-right: 80px;
+  margin-top: 10px;
+}
+
+.page55 {
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(191, 119, 26);
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.page5Resposive{
+  display: none;
+}
+
+.page6 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+}
+
+#footer {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background-color: black;
+  bottom: 0;
+}
+
+
+.upper-footer {
+  display: flex;
+  background-color: rgba(240, 248, 255, 0.492);
+  height: 10vh;
+  width: 100vw;
+  justify-content: center;
+}
+.upper-footer button{
+  height: 3vh;
+  width: 6vw;
+  background-color: black;
+  color: white;
+  border: 2px solid rgba(216, 210, 210, 0.79);
+  border-radius: 15%;
+  margin-top: 10px;
+}
+.upper-footer button:hover {
+     background-color: rgba(0, 0, 0, 0.734);
+     color: rgba(255, 255, 255, 0.627);
+}
+
+
+.mid-footer{
+  display: flex;
+  justify-content: space-between;
+  height: 16vh;
+  width: 100vw;
+  background-color: rgba(240, 248, 255, 0.492);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.getInTouch{
+  margin-left: 14vh;
+}
+ .getInTouch .navTouchBut:hover{
+    color: rgba(46, 44, 44, 0.521);  
+    scale: 1.1;
+}
+.addASuggestion{
+  margin-right: 5vw;
+  position: relative;
+  top: -40%;
+}
+.sendSvg-mid-footer{
+   height: 5vh;
+   width: 5vw;  
+   position: relative;
+   right: 52%;
+   top: 4%;
+ }
+ .sendSvg-mid-footer1{
+  height: 6.7vh;
+  width: 3.4vw;
+  position: relative;
+  right: 8%;
+  top: 10%;
+  z-index: 999;
+}
+.textAreaSugg{
+  background-color: rgb(217 221 217 / 68%);
+  font-size: 16px;
+  position: absolute;
+  top: 35%;
+}
+.textAreaSugg:hover{
+  border: 1px solid rgba(229, 223, 223, 0.834);
+  background-color: rgba(99, 102, 84, 0.636);
+}
+.Suggest-Fotter{
+  display: flex;
+  position: relative;
+}
+.down-footer{
+  height: 33vh;
+  width: 100vw;
+  margin-top: 7vw;
+  display: flex;
+  justify-content: center;
+  align-self: end;
+  font-weight: 600;
+}
+.down-footer .down-foot{
+  font-size: 16vw;
+  color: red;
+}
+.break-5{
+  height:.9px;
+  width: 77%;
+  background-color: rgba(196, 183, 183, 0.695);
+  margin: 2vw auto;
+}
+.break-4{
+  height:.9px;
+  width: 77%;
+  background-color: rgba(196, 183, 183, 0.695);
+  margin: 2vw auto;
+}
+.nav-footer{
+  height: 4.7vw;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+}
+.icons-footer{
+  height: 100%;
+  width: 70%;
+  background-color: rgba(103, 103, 156, 0.207);
+  margin: 7px auto;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.fb-svg{
+  height: 5.7vh;
+  width: 4vw;
+}
+.insta-svg{
+  height: 5.7vh;
+  width: 4vw;
+}
+.twitter-svg{
+  height: 5.7vh;
+  width: 4vw;
+}
+
+
+.guii{
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+  top: 4%;
+  display: inline-block;
+
+}

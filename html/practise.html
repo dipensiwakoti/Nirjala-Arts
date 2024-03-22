@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/practice.css/practise.css">
+</head>
+<body>
+    <h2>Enter the text:</h2> <input type="text" placeholder="hii brother">
+    <br>
+    <button>Submit</button>
+
+    <!-- <div class="box">
+
+    <div class="box1">
+    <div class="box2"></div>
+    <div class="box3"></div> -->
+    <script>
+        var button= document.querySelector("button");
+        var input = document.querySelector("input");
+
+        
+        button.addEventListener("click",function(){
+            console.log(input.value.length)
+               var length1 = input.value.length;
+            // button.style.opacity="0"
+            if(length1 == 0){
+           input.placeholder = "Enter the text/ Invalid!";
+          }
+          else{
+            button.style.opacity=".5";
+              input.value = "" ; 
+             input.placeholder = "Submitted sucessfully!"
+            }
+            })
+
+
+    </script>
+    </div>
+      </div>
+ </body>
+</html>
