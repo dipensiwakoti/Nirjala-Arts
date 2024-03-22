@@ -1,4 +1,5 @@
 var menu = document.querySelector("#SVGRepo_iconCarrier");
+var sendButton77 = document.querySelector("#XMLID_51_");
 var displayMenu = document.querySelector(".menu-display-onclick");
 var svg1 = document.querySelector(".nav-menu-svg1");
 var svg7 = document.querySelector(".nav-menu-svg7");
@@ -124,6 +125,26 @@ page4Element.forEach(function(elementEachPage4,nodeEach) {
 
         }
       })
+    });
+
+    sendButton77.addEventListener("click",function textAreaInvalid(){
+      var e = document.querySelector(".addASuggestion textarea").value.trim().length;
+      if(e == 0){
+        textArea.placeholder = "Please fill the form !";
+    }
+    if(e>0){
+      textArea.value = "";
+      textArea.placeholder = "Form sucessfully Submitted!";
+      textArea.style.color = "orangered";
+    
+     setTimeout(function(){
+    
+       textArea.style.color = "black";
+       textArea.placeholder = "add some sugg....";
+    
+    
+     },2000)
+    }
     });
   // var elementEachPage4.id);
   // elementEachPage4.forEach(function(elementEachPage4_2nd,nodeEach_2nd){

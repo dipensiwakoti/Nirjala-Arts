@@ -347,27 +347,14 @@
   top: -20%;
 }
 .addASuggestion h3{
-  font-size: 18px;
-}
-.sendSvg-mid-footer{
-   height: 5vh;
-   width: 5vw;  
-   position: relative;
-   right: 4%;
-   top: 14%;
- }
- .sendSvg-mid-footer1{
-  height: 10vh;
-  width: 4.4vw;
-  /* right: 8%; */
-  top: 14%;
+  font-size: 15px;
 }
 .textAreaSugg{
-  font-size: 12px;
+  font-size: 9px;
   top: 35%;
   color: aqua;
   background-color: rgb(217 221 217 / 68%);
-
+  height: 79px;
 }
 
 .down-footer{
@@ -420,10 +407,6 @@ line-height: 16.9px;
 .bigRight {
   line-height: 32.7px;
 }
-
-/* #footer{
-  height: 90vh;
-} */
 .textPage5Resposive p{
   font-size: 20px;
 }
@@ -526,19 +509,40 @@ line-height: 16.9px;
 }
 
 }
-@media (min-width:350px) {
+
+@media (min-width:100px) {
+@media (max-width:550px) {
+
+  .sendSvg-mid-footer {
+    height: 5vh;
+    width: 5vw;
+    position: relative;
+    right: 4%;
+    top: 28%;
+}
+.sendSvg-mid-footer1 {
+  height: 6.1vh;
+  width: 7vw;
+  position: relative;
+  right: 5%;
+  top: 28%;
+}
+}
+}
+@media (min-width:550px) {
 @media (max-width:950px) {
 
-  .sendSvg-mid-footer1 {
-    height: 10vh;
-    width: 4.4vw;
+  .sendSvg-mid-footer {
+    height: 5vh;
+    width: 5vw;
+    position: relative;
     right: 8%;
-    top: 14%;
-  }
+}
+  .sendSvg-mid-footer1 {
+    height: 6.1vh;
+    width: 7vw;
+    position: relative;
+    right: 9%;
 }
 }
-@media (max-width:350px) {
-  .sendSvg-mid-footer1{
-    right: 1.6%;
-  }
 }
