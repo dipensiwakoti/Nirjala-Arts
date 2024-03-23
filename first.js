@@ -6,6 +6,7 @@ var AllELem = document.querySelectorAll(".page4 .elem");
 var rachana= document.querySelector("#rachana");
 var fotterSendIcon = document.querySelector(".sendSvg-mid-footer");
 var fotterSendIcon1 = document.querySelector(".sendSvg-mid-footer1");
+var sendButton77 = document.querySelector("#XMLID_51_");
 var hibro = document.querySelector(".sendSvg-mid-footer1");
 var downFotter = document.querySelector(".down-footer");
 var backTop = document.querySelector("#backToTop");
@@ -114,6 +115,23 @@ if(e>0){
    textArea.placeholder = "add some sugg....";
 
 
+ },2000)
+}
+});
+sendButton77.addEventListener("click",function textAreaInvalid(){
+  var e = document.querySelector(".addASuggestion textarea").value.trim().length;
+  if(e == 0){
+    textArea.placeholder = "Please fill the form !";
+}
+if(e>0){
+  textArea.value = "";
+  textArea.placeholder = "Form sucessfully Submitted!";
+  textArea.style.color = "orangered";
+
+ setTimeout(function(){
+
+   textArea.style.color = "black";
+   textArea.placeholder = "add some sugg....";
  },2000)
 }
 });
