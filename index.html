@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
+    <!-- scroll animation ---aos github link copy paste -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +43,8 @@
 
          <div class="page1">
            <div class="navigation">
-              <div ><img class="logo1"  src="HeadWhite.png" alt=""></div>
+              <div >
+               <a href="http://127.0.0.1:5500/index.html"> <img class="logo1"  src="HeadWhite.png" alt=""></div></a>
 
               <div id="navButtons"> 
                 <h3><a href="#">Home</a></h3>
@@ -115,16 +119,16 @@
         </div>
 
 
-        <div id="page3">
+        <div id="page3" >
           <div class="skewball">
 
           </div>
-          <div class="page3Left">
+          <div class="page3Left" data-aos="fade-in-left">
             <h2>We're a modest group of creators, producers, and designers, driven by a deep appreciation <br>for the power of design and the impact of our work. With a humble approach, we focus<br> on the finer details, knowing that they hold the key to unlocking extraordinary outcomes.<br> Our goal is simple: <br>To create with purpose and integrity, <br>Allowing our passion to shine through in every project we undertake.</h2>
           </div>
-          <div class="page3Right">
-            <img src="space.png" alt="">
-            <p>In our creative journey, we embrace the joy of crafting, the thrill of unraveling puzzles, and the beauty of shared visions. Collaboration fuels our passion as we weave together strands of imagination and expertise, transforming mere concepts into tangible wonders. Together, we embark on a voyage of innovation, where every connection forged becomes a cornerstone of our shared endeavors. For us, the art lies not only in the final creation but also in the bonds we nurture along the way.</p>
+          <div class="page3Right" data-aos="fade-in-right">
+            <img src="space.png" alt="" data-aos="fade-in">
+            <p data-aos="fade-in">In our creative journey, we embrace the joy of crafting, the thrill of unraveling puzzles, and the beauty of shared visions. Collaboration fuels our passion as we weave together strands of imagination and expertise, transforming mere concepts into tangible wonders. Together, we embark on a voyage of innovation, where every connection forged becomes a cornerstone of our shared endeavors. For us, the art lies not only in the final creation but also in the bonds we nurture along the way.</p>
           </div>
 
         </div>
@@ -132,31 +136,32 @@
 
         <div class="page4">
                    <div class="fullScreen"></div>
-          <div class="elem">
+          <div class="elem" data-aos="fade-in" data-aos-offset="77.77"
+          >
             <div class="overlay"></div>
             <h2>Mr Bean</h2>
             <img src="bean.jpg" alt="image not found">
           </div>
-          <div class="elem" image-data="">
+          <div  data-aos="fade-in" class="elem" image-data="" data-aos-offset="77.77">
             <div class="overlay"></div>
             <h2>Nabin K Bhattarai</h2>
             <img src="nabin.jpg" alt="image not found">
 
           </div>
-          <div class="elem" image-data="">
+          <div  data-aos="fade-in" class="elem" data-aos-offset="77.77" image-data="">
             <div class="overlay"></div>
             <h2>Rachana Dahal</h2>
             <img src="rachana.jpg" alt="image not found">
 
           </div>
-          <div class="elem" image-data="hiibrother">
+          <div class="elem" image-data="hiibrother" data-aos-offset="77.77"  data-aos="fade-in">
             <div class="overlay"></div>
             <h2>Dustin Henderson</h2>
             <img src="dustin.jpg" id="rachana" alt="image not found">
 
           </div>
 
-          <div class="elem" image-data="">
+          <div class="elem" image-data="" data-aos-offset="77.77"  data-aos="fade-in">
             <div class="overlay"></div>
             <h2>Anuradha Koirala</h2>
             <img src="anuradha.jpg" alt="image not found">
@@ -165,42 +170,42 @@
 
         </div>
         <div class="page4Resposive">
- <div class="elem"id="aA">
+ <div class="elem"id="aA"  data-aos="fade-in">
    <div class="overlay"></div>
    <h2>Mr Bean</h2>
   </div>
- <div class="Image-Page4-Responsive">  <img src="bean.jpg"  alt="image not found">  </div>
+ <div  data-aos="flip-right" class="Image-Page4-Responsive">  <img src="bean.jpg"  alt="image not found">  </div>
 
 
- <div class="elem" id="bB">
+ <div  data-aos="fade-in" class="elem" id="bB">
    <div class="overlay"></div>
    <h2>Nabin K Bhattarai</h2>
    
   </div>
-    <div class="Image-Page4-Responsive">  <img src="nabin.jpg"  alt="image not found">  </div>
-
- <div class="elem" id="cC">
+    <div data-aos="flip-up" class="Image-Page4-Responsive">  <img src="nabin.jpg"  alt="image not found">  </div>
+ 
+ <div  data-aos="fade-in" class="elem" id="cC">
    <div class="overlay"></div>
    <h2>Rachana Dahal</h2>
  </div>
- <div class="Image-Page4-Responsive">  <img src="rachana.jpg"  alt="image not found">  </div>
+ <div  data-aos="flip-left" class="Image-Page4-Responsive">  <img src="rachana.jpg"  alt="image not found">  </div>
 
 
- <div class="elem" id="dD">
+ <div  data-aos="fade-in" class="elem" id="dD">
    <div class="overlay"></div>
    <h2>Dustin Henderson</h2>
  </div>
 
- <div class="Image-Page4-Responsive">   <img src="dustin.jpg"  alt="image not found"> </div>
+ <div  data-aos="slide-up" class="Image-Page4-Responsive">   <img src="dustin.jpg"  alt="image not found"> </div>
 
 
- <div class="elem" id="eE">
+ <div class="elem" id="eE" data-aos="fade-in">
    <div class="overlay"></div>
    <h2>Anuradha Koirala</h2>
 
  </div>
 
- <div class="Image-Page4-Responsive">  <img src="anuradha.jpg"  alt="image not found">  </div>
+ <div data-aos="flip-down" class="Image-Page4-Responsive">  <img src="anuradha.jpg"  alt="image not found">  </div>
 
 
 </div>
@@ -254,7 +259,7 @@
            </div></div>  </div>
            <div class="break-4"> hello </div>
 
-           <div class="down-footer"><h3 class="down-foot" >Nirjala Arts</h3></div>
+           <div class="down-footer"><h3 class="down-foot" data-aos="flip-left">Nirjala Arts</h3></div>
            <div class="break-5">hello</div>
            <div class="nav-footer"> 
 
@@ -295,5 +300,12 @@
    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       <!-- adding js for scrool animation -->
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init({
+          duration: 1000,
+         });
+       </script>
 </body>
 </html>
