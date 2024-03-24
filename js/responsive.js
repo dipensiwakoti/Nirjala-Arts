@@ -2,7 +2,8 @@ var menu = document.querySelector("#SVGRepo_iconCarrier");
 var sendButton77 = document.querySelector("#XMLID_51_");
 var displayMenu = document.querySelector(".menu-display-onclick");
 var svg1 = document.querySelector(".nav-menu-svg1");
-var svg7 = document.querySelector(".nav-menu-svg7");
+var svg7 = document.querySelectorAll(".nav-menu-svg7");
+var svg7111 = document.querySelectorAll(".nav-menu-svg7-111");
 var svg = document.querySelector(".nav-menu-svg");
 var wrapper = document.querySelector("#wrapper");
 var video2= document.querySelector(".video2");
@@ -52,27 +53,59 @@ var overlaY=1;
 
  })
  page2.addEventListener("click",function(){
-  displayMenu.style.top="-100%";
   belowNav.style.filter= "blur(0px)";
   video2.style.filter= "blur(0px)";
   page2.style.filter= "blur(0px)";
   page3.style.filter= "blur(0px)";
   page4.style.filter= "blur(0px)";
-  logo1.style.opacity= "1";
+  logo1.style.opacity= "1";  
+  var f1 = displayMenu.style.top="-100%";
+
+   if(f1=="-100%"){
+    flag=0;
+    svg1.innerHTML=`<svg class="nav-menu-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"></path> </g></svg>
+      <div class="textMenuVal"><p>Menu</p></div>
+      `;
+   }
+
+   else{
+    flag=1;
+    svg1.innerHTML= `<svg class="nav-menu-svg2" fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier2"> <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "></polygon> </g></svg>
+    <div class="textMenuVal"><p>Menu</p></div>
+
+    `;
+   }
+
+
 
  })
  video2.addEventListener("click",function(){
-  displayMenu.style.top="-100%";
   belowNav.style.filter= "blur(0px)";
   video2.style.filter= "blur(0px)";
   page2.style.filter= "blur(0px)";
   page3.style.filter= "blur(0px)";
   page4.style.filter= "blur(0px)";
   logo1.style.opacity= "1";
+  var f2 = displayMenu.style.top="-100%";
+
+  if(f2=="-100%"){
+    flag=0;
+    svg1.innerHTML=`<svg class="nav-menu-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"></path> </g></svg>
+      <div class="textMenuVal"><p>Menu</p></div>
+      `;
+   }
+
+   else{
+    flag=1;
+    svg1.innerHTML= `<svg class="nav-menu-svg2" fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier2"> <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "></polygon> </g></svg>
+    <div class="textMenuVal"><p>Menu</p></div>
+
+    `;
+   }
 
  })
-
-svg7.addEventListener("click",function(){
+svg7.forEach(function(theEachMenu,theNodeMenu){
+theEachMenu.addEventListener("click",function(){
     if(flag==0){
     displayMenu.style.top = "10vh";
     flag=1;
@@ -110,6 +143,48 @@ svg7.addEventListener("click",function(){
       `;
     }
 } )
+})
+svg7111.forEach(function(theEachMenu1,theNodeMenu1){
+theEachMenu1.addEventListener("click",function(){
+    if(flag==0){
+    displayMenu.style.top = "10vh";
+    flag=1;
+    // svg.style.animation = "threeDot .7s ease infinite";
+
+    belowNav.style.filter= "blur(2px)";
+    video2.style.filter= "blur(2px)";
+    page2.style.filter= "blur(2px)";
+    page3.style.filter= "blur(2px)";
+    page4.style.filter= "blur(2px)";
+    logo1.style.opacity= "0";
+    svg.style.display= "none";
+    svg1.innerHTML= `<svg class="nav-menu-svg2" fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier2"> <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "></polygon> </g></svg>
+    <div class="textMenuVal"><p>Menu</p></div>
+
+    `;
+    svg3 = document.querySelector(".nav-menu-svg2");
+    svg3.style.display="block";
+  }
+  
+  else{
+    svg3.style.display= "none";
+    displayMenu.style.top = "-100%";
+    flag=0;
+      belowNav.style.filter= "blur(0px)";
+      video2.style.filter= "blur(0px)";
+      page2.style.filter= "blur(0px)";
+      page3.style.filter= "blur(0px)";
+      page4.style.filter= "blur(0px)";
+      logo1.style.opacity= "1";
+      svg.style.display= "block";
+      svg1.innerHTML=`<svg class="nav-menu-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"></path> </g></svg>
+      <div class="textMenuVal"><p>Menu</p></div>
+
+      `;
+    }
+} )
+})
+
 page4Element.forEach(function(elementEachPage4,nodeEach) {
    elementEachPage4.addEventListener("click",function(elementEachPage4_2nd,nodeEach_2nd){
   console.log(elementEachPage4.id);

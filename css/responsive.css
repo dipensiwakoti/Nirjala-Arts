@@ -39,8 +39,9 @@
     height: 18vh;
     margin-right: 5vw;
     z-index: 40;
-    width: 27vw;
+    width: 105px;
     right: 0;
+    display: block;
   }
   .menu-display-onclick a h4{
     display: flex;
@@ -546,4 +547,10 @@ line-height: 16.9px;
     top: 28%;
 }
 }
+}
+@media (min-width:900px) {
+  .menu-display-onclick{
+    display: none;
+  }
+  
 }
