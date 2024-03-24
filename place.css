@@ -1,0 +1,85 @@
+.wrapperPlace{
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(" https://images.unsplash.com/photo-1471666875520-c75081f42081?q=80&w=1272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+    @media screen and (max-width:1000px) {
+        height: 100vh;
+        background-image: url("copy.png");
+        width: 95vw;
+        background-repeat: no-repeat;
+       }
+
+}
+
+p{
+    width:30%;
+    margin-top: 10%;
+    margin-left: 57%;
+    @media screen and (max-width:1000px) {
+        font-size: small;
+        margin: 0%;
+        width: 72vw;
+        margin-left: 21vw;
+        margin-top: 16vw;
+       }
+
+} 
+label {
+    color: rgb(0, 0, 0);
+   margin-left: 2%;
+  margin-top: 14%;
+   background-color: rgb(218, 184, 143);
+   font-weight: 900;
+   font-style: oblique;
+}
+
+label2 {
+    color: rgb(0, 0, 0);
+   margin-left: 2%;
+   margin-top: 2%;
+   background-color: rgb(144, 150, 143);
+   font-weight: 500;
+   font-style: italic;
+   @media screen and (max-width:1000px) {
+    font-size: smaller;
+    font-size: small;
+      margin: 0%;
+   }
+
+}
+
+label3 {
+    color: rgb(0, 0, 0);
+   margin-left: 2%;
+   margin-top: 2%;
+   background-color: rgb(228, 129, 111);
+
+}
+
+.back2{
+    width: 63px;
+    margin-left: 57%;
+    height: 27px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid blue;
+    @media screen and (max-width:1000px) {
+        font-size: small;
+        margin: 0%;
+        width: 63px;
+        margin-left: 150px;
+        margin-top: 5px;
+       }
+}
+.back2:hover{
+    background-color: rgba(16, 69, 230, 0.675);
+    color: azure;
+}
